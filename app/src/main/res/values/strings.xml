@@ -9,7 +9,11 @@
     <string name="app_addons_cheese">Queijo</string>
     <string name="app_addons_bacon">Bacon</string>
     <string name="app_addons_onion">Onion Rings</string>
-    <string name="app_bacon_price">R$ 4.00</string>
+
+    <string name="app_bacon_price">R$ 2.00</string>
+    <string name="app_cheese_price">R$ 2.00</string>
+    <string name="app_onion_price">R$ 3.00</string>
+
     <string name="app_label_minus">-</string>
     <string name="app_label_plus">+</string>
 

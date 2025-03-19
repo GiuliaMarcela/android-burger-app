@@ -130,7 +130,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="@string/app_bacon_price" />
+                    android:text="@string/app_cheese_price" />
 
                 <CheckBox
                     android:id="@+id/checkbox_cheese"
@@ -159,7 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="@string/app_bacon_price" />
+                    android:text="@string/app_onion_price" />
 
                 <CheckBox
                     android:id="@+id/checkbox_onion"
