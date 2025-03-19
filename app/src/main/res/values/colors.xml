@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores Principais -->
+    <color name="rs_purple">#8257E5</color>
+    <color name="rs_green">#04D361</color>
+
+    <!-- Cores de Superfície e Texto -->
+    <color name="rs_background_light">#FFFFFF</color>
+    <color name="rs_surface_light">#F8F8FA</color>
+    <color name="rs_on_surface_light">#2E2E36</color> <!-- Texto escuro -->
+
+    <!-- Cores de Componentes -->
+    <color name="rs_button_light">@color/rs_purple</color>
+    <color name="rs_button_text_light">#FFFFFF</color>
+    <color name="rs_checkbox_light">@color/rs_purple</color>
+
+    <!-- Cores Principais -->
+    <color name="dark_rs_purple">#9F75FF</color> <!-- Roxo mais claro para contraste -->
+
+    <!-- Cores de Superfície e Texto -->
+    <color name="rs_background_dark">#121214</color> <!-- Fundo escuro -->
+    <color name="rs_surface_dark">#202024</color> <!-- Superfície escura -->
+    <color name="rs_on_surface_dark">#E1E1E6</color> <!-- Texto claro -->
+
+</resources>

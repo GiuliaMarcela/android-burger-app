@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.Theme.Hamburgueriaz"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:background="@color/design_default_color_primary"
+            android:contentDescription="@string/app_content_description"
+            android:src="@drawable/banner_company_burger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Título da tela -->
+        <TextView
+            android:id="@+id/title_order"
+            style="@style/EstiloTexto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/app_title_order"
+            android:textStyle="bold"
+            app:fontWeight="700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <!-- Campo de texto -->
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints="name"
+            android:hint="@string/app_placeholder"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_order" />
+
+        <!-- Título dos adicionais -->
+        <TextView
+            android:id="@+id/add_ons_title"
+            style="@style/EstiloTexto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/app_title_addons"
+            android:textStyle="bold"
+            app:fontWeight="700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_text" />
+
+        <!-- Lista de adicionais (ajustado para ConstraintLayout) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_addons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_ons_title">
+
+            <!-- Bacon -->
+            <LinearLayout
+                android:id="@+id/linear_layout_addons_bacon"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_addons_bacon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/app_bacon_price" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_bacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_addons_bacon_description" />
+            </LinearLayout>
+
+            <!-- Queijo -->
+            <LinearLayout
+                android:id="@+id/linear_layout_addons_cheese"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_addons_bacon">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_addons_cheese" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/app_bacon_price" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_addons_cheese_description" />
+            </LinearLayout>
+
+            <!-- Cebola -->
+            <LinearLayout
+                android:id="@+id/linear_layout_addons_onion"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_addons_cheese">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_addons_onion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/app_bacon_price" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_onion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_addons_onion_description" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Seletor de quantidade -->
+        <LinearLayout
+            android:id="@+id/linear_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_addons">
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/app_title_quantity"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_decrease"
+                style="@style/Widget.Hamburgueriaz.Button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/app_label_minus" />
+
+            <TextView
+                android:id="@+id/text_quantity"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_increase"
+                style="@style/Widget.Hamburgueriaz.Button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="@string/app_label_plus" />
+        </LinearLayout>
+
+        <!-- Total do pedido -->
+        <LinearLayout
+            android:id="@+id/linear_layout_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_quantity">
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/app_title_total"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_bacon_price"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Botão de pedido -->
+        <Button
+            style="@style/Widget.Hamburgueriaz.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/app_title_order"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_total_amount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

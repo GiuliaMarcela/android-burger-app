@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hamburgueriaz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores de Fundo -->
+        <item name="android:colorBackground">@color/rs_background_light</item>
+        <item name="colorSurface">@color/rs_surface_light</item>
+        <item name="colorOnSurface">@color/rs_on_surface_light</item>
+
+        <!-- Cores Principais -->
+        <item name="colorPrimary">@color/rs_purple</item>
+        <item name="colorSecondary">@color/rs_green</item>
+
+        <!-- Botões -->
+<!--        <item name="materialButtonStyle">@style/Widget.Hamburgueriaz.Button</item>-->
+        <item name="colorPrimaryContainer">@color/rs_button_light</item>
+        <item name="colorOnPrimaryContainer">@color/rs_button_text_light</item>
+
+        <!-- Checkboxes -->
+        <item name="colorControlActivated">@color/rs_checkbox_light</item>
+        <item name="colorControlNormal">@color/rs_on_surface_light</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/rs_purple</item>
+        <item name="android:navigationBarColor">@color/rs_purple</item>
+    </style>
+
+    <!-- Estilo do Botão -->
+    <style name="Widget.Hamburgueriaz.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/rs_button_light</item>
+        <item name="android:textColor">@color/rs_button_text_light</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Theme.Hamburgueriaz" parent="Base.Theme.Hamburgueriaz" />
+
+    <style name="EstiloTexto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+</resources>
