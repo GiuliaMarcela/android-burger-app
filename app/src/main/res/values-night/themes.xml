@@ -1,31 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <!--    <style name="Base.Theme.Hamburgueriaz" parent="Theme.Material3.DayNight.NoActionBar">-->
-    <!--        &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
-    <!--        &lt;!&ndash; <item name="colorPrimary">@color/my_dark_primary</item> &ndash;&gt;-->
-    <!--        -->
-    <!--    </style>-->
+<resources>
+
     <style name="Base.Theme.Hamburgueriaz" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Cores de Fundo -->
-        <item name="android:colorBackground">@color/rs_background_dark</item>
-        <item name="colorSurface">@color/rs_surface_dark</item>
-        <item name="colorOnSurface">@color/rs_on_surface_dark</item>
 
-        <!-- Cores Principais -->
-        <item name="colorPrimary">@color/dark_rs_purple</item>
-        <item name="colorSecondary">@color/rs_green</item>
-
-        <!-- Botões -->
-<!--        <item name="materialButtonStyle">@style/Widget.Hamburgueriaz.Button</item>-->
-        <item name="colorPrimaryContainer">@color/rs_button_light</item>
-        <item name="colorOnPrimaryContainer">@color/rs_button_text_light</item>
-
-        <!-- Checkboxes -->
-        <item name="colorControlActivated">@color/rs_checkbox_light</item>
-        <item name="colorControlNormal">@color/rs_on_surface_dark</item>
-
-        <!-- Status Bar -->
-        <item name="android:statusBarColor">@color/rs_surface_dark</item>
-        <item name="android:navigationBarColor">@color/rs_surface_dark</item>
     </style>
 </resources>
