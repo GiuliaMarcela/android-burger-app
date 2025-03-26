@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Hamburgueriaz</string>
-    <string name="compact_app_name" translatable="false">Hamb.z</string>
 
     <!-- Login Activity -->
-    <string name="logo_description">Burger joint logo</string>
+    <string name="logo_description">Burger shop logo</string>
     <string name="main_title">ARE YOU HUNGRY?</string>
     <string name="subtitle">Fast, fresh, and just the way you like it!</string>
     <string name="input_hint">Full Name</string>
