@@ -6,7 +6,6 @@
     android:layout_width="170dp"
     android:layout_height="260dp"
     android:layout_marginVertical="4dp"
-    android:checkable="true"
     android:clickable="true"
     android:elevation="0dp"
     android:focusable="true"
