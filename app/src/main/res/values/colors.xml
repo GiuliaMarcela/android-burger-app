@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary_dark">#261204</color>
+    <color name="description">#70261204</color>
     <color name="accent_red">#E3001B</color>
     <color name="accent_yellow">#EFC349</color>
+    <color name="dark_green">#093824</color>
     <color name="background_cream">#FCEFDD</color>
     <color name="white">#ffffff</color>
-    <color name="disabled">#7D7C84</color>
+    <color name="disabled">#848FA5</color>
     <color name="selected">#5B6C5D</color>
     <color name="selected_background">#F7DCB6</color>
     <color name="transparent">#00000000</color>
+    <color name="divider">#F7D3A1</color>
 </resources>

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             submitOrderButton.setEnabled(true);
             submitOrderButton.setBackgroundTintList(
                     ColorStateList.valueOf(
-                            ContextCompat.getColor(this, R.color.accent_red)
+                            ContextCompat.getColor(this, R.color.dark_green)
                     )
             );
             submitOrderButton.postInvalidate();
@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
         submitOrderButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, OrderSummaryActivity.class);
-            //TODO: Passar dados para a próxima tela
+            intent.putExtra("BURGER_NAME", selectedBurger.getName());
+            intent.putExtra("BURGER_DESCRIPTION", selectedBurger.getDescription());
+            intent.putExtra("BURGER_PRICE", selectedBurger.getPrice());
             startActivity(intent);
         });
     }
