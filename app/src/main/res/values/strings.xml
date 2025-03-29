@@ -15,4 +15,8 @@
     <string name="choose_a_burger_before_proceed">Select a burger before proceeding.</string>
     <string name="order_burger_button">Place Order</string>
     <string name="burger_image_content_description">Burger photo</string>
+    <string name="order_summary_burger_photo_description">Foto de uma hamburguer com ovo em um prato de porcelana.</string>
+    <string name="finish_your_order">Finalize o\nseu pedido!</string>
+    <string name="filled_icon_btn_desc">Botão de adição</string>
+    <string name="filled_icon_btn_desc_1">Botão de subtração</string>
 </resources>
