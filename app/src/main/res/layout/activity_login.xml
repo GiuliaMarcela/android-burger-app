@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_cream"
     android:fillViewport="true"
-    tools:context=".LoginActivity">
+    tools:context=".presentation.LoginActivity">
 
     <View
         android:id="@+id/app_background"
@@ -36,6 +36,7 @@
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/Base.Theme.Hamburgueriaz.Title"
         android:layout_marginTop="16dp"
         android:text="@string/app_name"
         android:textAllCaps="true"
@@ -57,7 +58,7 @@
 
         <TextView
             android:id="@+id/main_title_text"
-            style="@style/EstiloTexto"
+            style="@style/Base.Theme.Hamburgueriaz.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -81,7 +82,8 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_title_text" />
+            app:layout_constraintTop_toBottomOf="@+id/main_title_text"
+            app:layout_constraintWidth_percent="0.8" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name_input_layout"
@@ -94,10 +96,15 @@
             app:boxStrokeColor="@color/primary_dark"
             app:endIconMode="clear_text"
             app:errorEnabled="true"
+            app:boxStrokeErrorColor="@color/accent_red"
+            app:endIconTint="@color/primary_dark"
+            app:errorIconTint="@color/accent_red"
             app:hintTextColor="@color/primary_dark"
+            app:errorTextColor="@color/accent_red"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/subtitle_text"
+            app:layout_constraintWidth_percent="0.8"
             app:placeholderTextColor="@color/primary_dark">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -111,7 +118,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/continue_button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginTop="24dp"
             android:text="@string/continue_button"
             android:textColor="@color/background_cream"
@@ -120,6 +127,7 @@
             app:cornerRadius="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name_input_layout" />
+            app:layout_constraintTop_toBottomOf="@+id/name_input_layout"
+            app:layout_constraintWidth_percent="0.8" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

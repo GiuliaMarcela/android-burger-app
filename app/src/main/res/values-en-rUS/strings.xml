@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Hamburgueriaz</string>
+    <string name="compact_app_name" translatable="false">Hamb.z</string>
 
     <!-- Login Activity -->
-    <string name="logo_description">Burger shop logo</string>
-    <string name="main_title">ARE YOU HUNGRY?</string>
+    <string name="logo_description">Hamburguer Restaurant Logo</string>
+    <string name="main_title">Are You Hungry?</string>
     <string name="subtitle">Fast, fresh, and just the way you like it!</string>
     <string name="input_hint">Full Name</string>
     <string name="continue_button">Continue</string>
@@ -12,7 +13,27 @@
 
     <!-- Main Activity -->
     <string name="choose_your_burger">Choose your burger now!</string>
-    <string name="choose_a_burger_before_proceed">Select a burger before proceeding.</string>
+    <string name="choose_a_burger_before_proceed">Please select a burger before proceeding.</string>
     <string name="order_burger_button">Place Order</string>
-    <string name="burger_image_content_description">Burger photo</string>
+    <string name="burger_image_content_description">Burger Photo</string>
+
+    <!-- Summary Activity -->
+    <string name="order_summary_burger_photo_description">Photo of a burger with egg on a porcelain plate.</string>
+    <string name="finish_your_order">Complete your\norder!</string>
+    <string name="filled_icon_btn_desc">Add button</string>
+    <string name="filled_icon_btn_desc_1">Subtract button</string>
+    <string name="quantity_title_details">Quantity</string>
+
+    <!-- Burgers -->
+    <string name="egg_burger">Egg X-Burger</string>
+    <string name="cheese_burger">Cheese Burger</string>
+    <string name="chicken_burger">Chicken Burger</string>
+    <string name="veggie_burger">Veggie Burger</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="has_onion_rings">Has Onion Rings?</string>
+    <string name="has_cheese">Has Cheese?</string>
+    <string name="has_bacon">Has Bacon?</string>
+    <string name="customer_name">Name</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

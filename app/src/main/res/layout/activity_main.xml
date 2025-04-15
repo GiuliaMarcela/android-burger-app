@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/logo_text_burger"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -25,7 +25,7 @@
 
     <TextView
         android:id="@+id/text_choose_burger"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -62,6 +62,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_semibold"
         android:text="@string/order_burger_button"
         android:textColor="@color/background_cream"
         android:textStyle="bold"

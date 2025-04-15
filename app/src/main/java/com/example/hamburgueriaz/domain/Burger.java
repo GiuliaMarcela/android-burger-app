@@ -1,10 +1,10 @@
-package com.example.hamburgueriaz.model;
+package com.example.hamburgueriaz.domain;
 
 public class Burger {
-    private String name;
-    private String description;
-    private String price;
-    private int imageLocation;
+    private final String name;
+    private final String description;
+    private final String price;
+    private final int imageLocation;
 
     public Burger(String name, String description, String price, int imageLocation) {
         this.name = name;

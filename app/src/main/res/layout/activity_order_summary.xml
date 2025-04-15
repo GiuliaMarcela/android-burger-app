@@ -8,7 +8,7 @@
     android:background="@color/background_cream"
     android:clipToPadding="false"
     android:padding="32dp"
-    tools:context=".OrderSummaryActivity">
+    tools:context=".presentation.OrderSummaryActivity">
 
     <ImageView
         android:id="@+id/background_wave_2"
@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/logo_text_burger"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -44,7 +44,7 @@
 
     <TextView
         android:id="@+id/title_order_summary"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -58,7 +58,7 @@
 
     <TextView
         android:id="@+id/title_order_burger"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Heading2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -84,9 +84,12 @@
             app:iconTint="@color/background_cream" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/quantity_text_view_1"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:text="1" />
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/primary_dark" />
 
         <Button
             android:id="@+id/icon_add"
@@ -101,7 +104,7 @@
 
     <TextView
         android:id="@+id/price_order_burger"
-        style="@style/Base.Theme.Hamburgueriaz.TextView"
+        style="@style/Base.Theme.Hamburgueriaz.Heading2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -112,41 +115,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_order_burger" />
 
-    <TextView
-        android:id="@+id/description_order_burger"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="@color/description"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price_order_burger" />
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/addons_order_burger"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="24dp"-->
-    <!--        android:text="Adicionais"-->
-    <!--        android:textColor="@color/primary_dark"-->
-    <!--        android:textSize="18sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/description_order_burger" />-->
     <LinearLayout
         android:id="@+id/addons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/description_order_burger">
+        app:layout_constraintTop_toBottomOf="@+id/price_order_burger">
 
         <!-- Título da Seção -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/Base.Theme.Hamburgueriaz.Heading2"
             android:text="Adicionais"
             android:textColor="@color/primary_dark"
             android:textSize="18sp"
@@ -249,6 +230,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Resumo do Pedido"
+            style="@style/Base.Theme.Hamburgueriaz.Heading2"
             android:textColor="@color/primary_dark"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -261,20 +243,21 @@
             android:paddingVertical="2dp">
 
             <TextView
+                android:id="@+id/customer_name_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nome"
+                android:text="@string/customer_name"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/customer_name_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="Fulaninho da Silva"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -287,20 +270,21 @@
             android:paddingVertical="2dp">
 
             <TextView
+                android:id="@+id/has_bacon_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Tem Bacon?"
+                android:text="@string/has_bacon"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/has_bacon_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="Sim"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -314,25 +298,27 @@
             android:paddingVertical="2dp">
 
             <TextView
+                android:id="@+id/has_cheese_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Tem Queijo?"
+                android:text="@string/has_cheese"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/has_cheese_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="Sim"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/has_onion_rings_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -340,20 +326,21 @@
             android:paddingVertical="2dp">
 
             <TextView
+                android:id="@+id/has_onion_rings_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Tem Onion Rings?"
+                android:text="@string/has_onion_rings"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/has_onion_rings_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="Sim"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -370,17 +357,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Quantidade"
+                android:text="@string/quantity_title_details"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/quantity_text_view_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="2"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -397,17 +384,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Preço Final"
+                android:text="@string/total_amount"
                 android:textColor="@color/primary_dark"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/total_amount_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="R$ 50.00"
                 android:textColor="@color/primary_dark"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -415,9 +402,9 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/submit_order_button"
+        android:id="@+id/complete_order_button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:text="@string/order_burger_button"
         android:textColor="@color/background_cream"

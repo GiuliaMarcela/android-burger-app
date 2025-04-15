@@ -3,20 +3,36 @@
     <string name="compact_app_name" translatable="false">Hamb.z</string>
 
     <!-- Login Activity -->
-    <string name="logo_description">Burger joint logo</string>
-    <string name="main_title">ARE YOU HUNGRY?</string>
-    <string name="subtitle">Fast, fresh, and just the way you like it!</string>
-    <string name="input_hint">Full Name</string>
-    <string name="continue_button">Continue</string>
-    <string name="required_field">This field is required.</string>
+    <string name="logo_description">Logo da Hamburgueria</string>
+    <string name="main_title">Está com Fome?</string>
+    <string name="subtitle">Rápido, fresco, e do jeito que você gosta!</string>
+    <string name="input_hint">Nome Completo</string>
+    <string name="continue_button">Continuar</string>
+    <string name="required_field">Este campo é obrigatório.</string>
 
     <!-- Main Activity -->
-    <string name="choose_your_burger">Choose your burger now!</string>
-    <string name="choose_a_burger_before_proceed">Select a burger before proceeding.</string>
-    <string name="order_burger_button">Place Order</string>
-    <string name="burger_image_content_description">Burger photo</string>
+    <string name="choose_your_burger">Escolha seu hamburguer agora!</string>
+    <string name="choose_a_burger_before_proceed">Selecione um hamburguer antes de prosseguir.</string>
+    <string name="order_burger_button">Fazer Pedido</string>
+    <string name="burger_image_content_description">Foto do Hamburguer</string>
     <string name="order_summary_burger_photo_description">Foto de uma hamburguer com ovo em um prato de porcelana.</string>
     <string name="finish_your_order">Finalize o\nseu pedido!</string>
     <string name="filled_icon_btn_desc">Botão de adição</string>
     <string name="filled_icon_btn_desc_1">Botão de subtração</string>
+    <string name="quantity_title_details">Quantidade</string>
+
+    <!-- Hamburgers -->
+    <string name="egg_burger">X-Burger com Ovo</string>
+    <string name="cheese_burger">Cheeseburger</string>
+    <string name="chicken_burger">Hambúrguer de Frango</string>
+    <string name="veggie_burger">Hambúrguer Vegetariano</string>
+    <string name="exit_modal_title">Sair</string>
+    <string name="exit_modal_message">Deseja realmente sair? Todas as informações serão perdidas.</string>
+    <string name="total_amount">Preço Final</string>
+    <string name="has_onion_rings">Tem Onion Rings?</string>
+    <string name="has_cheese">Tem Queijo?</string>
+    <string name="has_bacon">Tem Bacon?</string>
+    <string name="customer_name">Nome</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
 </resources>
