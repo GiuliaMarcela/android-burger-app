@@ -25,15 +25,24 @@
     <string name="quantity_title_details">Quantity</string>
 
     <!-- Burgers -->
-    <string name="egg_burger">Egg X-Burger</string>
-    <string name="cheese_burger">Cheese Burger</string>
+    <string name="burger_title">Burger</string>
+    <string name="egg_burger">Egg Burger</string>
+    <string name="cheese_burger">Cheeseburger</string>
     <string name="chicken_burger">Chicken Burger</string>
     <string name="veggie_burger">Veggie Burger</string>
-    <string name="total_amount">Total Amount</string>
+    <string name="exit_modal_title">Exit</string>
+    <string name="exit_modal_message">Do you really want to exit? All information will be lost.</string>
+    <string name="total_amount">Total Price</string>
     <string name="has_onion_rings">Has Onion Rings?</string>
     <string name="has_cheese">Has Cheese?</string>
     <string name="has_bacon">Has Bacon?</string>
     <string name="customer_name">Name</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="add_ons_bacon">Bacon</string>
+    <string name="add_ons_cheese">Cheese</string>
+    <string name="add_ons_onion_rings">Onion Rings</string>
+    <string name="title_order_summary">Order Summary</string>
+    <string name="add_ons">Add-ons</string>
+    <string name="email_subject">Order from %1$s</string>
 </resources>

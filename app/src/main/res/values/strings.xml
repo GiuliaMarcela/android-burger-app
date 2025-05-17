@@ -22,6 +22,7 @@
     <string name="quantity_title_details">Quantidade</string>
 
     <!-- Hamburgers -->
+    <string name="burger_title">Hambúrguer</string>
     <string name="egg_burger">X-Burger com Ovo</string>
     <string name="cheese_burger">Cheeseburger</string>
     <string name="chicken_burger">Hambúrguer de Frango</string>
@@ -29,10 +30,16 @@
     <string name="exit_modal_title">Sair</string>
     <string name="exit_modal_message">Deseja realmente sair? Todas as informações serão perdidas.</string>
     <string name="total_amount">Preço Final</string>
-    <string name="has_onion_rings">Tem Onion Rings?</string>
+    <string name="has_onion_rings">Tem Anéis de cebola?</string>
     <string name="has_cheese">Tem Queijo?</string>
     <string name="has_bacon">Tem Bacon?</string>
     <string name="customer_name">Nome</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
+    <string name="add_ons_bacon">Bacon</string>
+    <string name="add_ons_cheese">Queijo</string>
+    <string name="add_ons_onion_rings">Anéis de cebola</string>
+    <string name="title_order_summary">Resumo do Pedido</string>
+    <string name="add_ons">Adicionais</string>
+    <string name="email_subject">Pedido de %1$s</string>
 </resources>

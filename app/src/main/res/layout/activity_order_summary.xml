@@ -128,7 +128,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Base.Theme.Hamburgueriaz.Heading2"
-            android:text="Adicionais"
+            android:text="@string/add_ons"
             android:textColor="@color/primary_dark"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -145,7 +145,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="Bacon"
+                android:text="@string/add_ons_bacon"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
 
@@ -173,7 +173,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="Queijo"
+                android:text="@string/add_ons_cheese"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
 
@@ -201,7 +201,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
-                android:text="Onion Rings"
+                android:text="@string/add_ons_onion_rings"
                 android:textColor="@color/primary_dark"
                 android:textSize="16sp" />
 
@@ -229,7 +229,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resumo do Pedido"
+            android:text="@string/title_order_summary"
             style="@style/Base.Theme.Hamburgueriaz.Heading2"
             android:textColor="@color/primary_dark"
             android:textSize="18sp"

@@ -1,5 +1,6 @@
 package com.example.hamburgueriaz.presentation;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -53,27 +54,35 @@ public class OrderSummaryActivity extends AppCompatActivity {
 
         double finalPrice = calculateFinalPrice(burgerPrice);
 
-        String emailBody = String.format(
-                "Resumo do Pedido:\n\n" +
-                        "Cliente: %s\n" +
-                        "Hambúrguer: %s\n" +
-                        "Tem Bacon? %s\n" +
-                        "Tem Queijo? %s\n" +
-                        "Tem Onion Rings? %s\n" +
-                        "Quantidade: %d\n" +
-                        "Preço final: R$ %.2f",
+        @SuppressLint("DefaultLocale") String emailBody = String.format(
+                "%s:\n\n" +
+                        "%s: %s\n" +
+                        "%s: %s\n" +
+                        "%s %s\n" +
+                        "%s %s\n" +
+                        "%s %s\n" +
+                        "%s: %d\n" +
+                        "%s: R$ %.2f",
+                getString(R.string.title_order_summary),
+                getString(R.string.customer_name),
                 customerName,
+                getString(R.string.burger_title),
                 burgerName,
+                getString(R.string.has_bacon),
                 hasBacon,
+                getString(R.string.has_cheese),
                 hasCheese,
+                getString(R.string.has_onion_rings),
                 hasOnionRings,
+                getString(R.string.quantity_title_details),
                 currentQuantity,
+                getString(R.string.total_amount),
                 finalPrice
         );
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, String.format("Pedido de %s", customerName));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject, customerName));
         emailIntent.putExtra(Intent.EXTRA_TEXT, emailBody);
 
         startActivity(emailIntent);
